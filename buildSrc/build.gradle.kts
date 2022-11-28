@@ -1,3 +1,4 @@
+
 import org.gradle.kotlin.dsl.`kotlin-dsl`
 
 plugins {
@@ -5,5 +6,6 @@ plugins {
 }
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
+
