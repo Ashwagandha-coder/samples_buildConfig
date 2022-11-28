@@ -29,7 +29,23 @@ android {
                     "proguard-rules.pro"
             )
         }
+        getByName("debug") {
+            isMinifyEnabled = false
+            isDebuggable = true
+
+        }
     }
+
+    buildFeatures {
+
+        viewBinding = true
+        //dataBinding = true
+        //compose = true
+
+
+    }
+
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
