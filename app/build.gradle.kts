@@ -4,11 +4,14 @@ plugins {
 }
 
 android {
+
+    namespace = "com.example.fortestbc"
+
     compileSdkVersion(AppConfig.compileSdkVersion)
     buildToolsVersion = AppConfig.buildToolsVersion
 
     defaultConfig {
-        applicationId = "com.sample.dsl"
+        applicationId = "com.example.fortestbc"
         minSdkVersion(AppConfig.minSdkVersion)
         targetSdkVersion(AppConfig.targetSdkVersion)
         versionCode = AppConfig.versionCode
