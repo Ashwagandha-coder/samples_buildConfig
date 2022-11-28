@@ -42,6 +42,15 @@ android {
         //dataBinding = true
         //compose = true
 
+    }
+
+
+    productFlavors {
+
+        create("secure") {}
+
+        create("insecure") {}
+
 
     }
 
