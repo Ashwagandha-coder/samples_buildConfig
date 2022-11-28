@@ -6,6 +6,7 @@ plugins {
 android {
 
     namespace = "com.example.fortestbc"
+    testNamespace = "com.example.testfortestbc"
 
     compileSdkVersion(AppConfig.compileSdkVersion)
     buildToolsVersion = AppConfig.buildToolsVersion
@@ -16,6 +17,7 @@ android {
         targetSdkVersion(AppConfig.targetSdkVersion)
         versionCode = AppConfig.versionCode
         versionName = AppConfig.versionName
+
 
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -46,9 +48,9 @@ android {
 
     }
 
+
     val security = "secure"
     val insecurity = "insecure"
-
 
     //flavorDimensions.addAll(listOf(security,insecurity))
     productFlavors {
