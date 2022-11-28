@@ -36,11 +36,6 @@ android {
         }
 
 
-        create("staging") {
-
-            applicationIdSuffix = ".debugStaging"
-
-        }
     }
 
     buildFeatures {
@@ -51,25 +46,36 @@ android {
 
     }
 
+    val security = "secure"
+    val insecurity = "insecure"
 
+
+    //flavorDimensions.addAll(listOf(security,insecurity))
     productFlavors {
 
-        create("secure") {
+//        create("staging") {
+//
+            //dimension = insecurity
+//            applicationIdSuffix = ".debugStaging"
+//
+//        }
 
-            applicationIdSuffix = ".secure"
+        create("secure") {
+//            applicationIdSuffix = ".secure"
+
 
         }
 
         create("insecure") {
 
-            applicationIdSuffix = ".insecure"
+//            applicationIdSuffix = ".insecure"
 
         }
 
 
-
     }
 
+    // TODO: flavorDimensions, dimensions, applicationIdSuffix, applicationNameSuffix, listOf() 
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
