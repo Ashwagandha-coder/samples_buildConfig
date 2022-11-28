@@ -34,6 +34,13 @@ android {
             isDebuggable = true
 
         }
+
+
+        create("staging") {
+
+            applicationIdSuffix = ".debugStaging"
+
+        }
     }
 
     buildFeatures {
@@ -47,9 +54,18 @@ android {
 
     productFlavors {
 
-        create("secure") {}
+        create("secure") {
 
-        create("insecure") {}
+            applicationIdSuffix = ".secure"
+
+        }
+
+        create("insecure") {
+
+            applicationIdSuffix = ".insecure"
+
+        }
+
 
 
     }
